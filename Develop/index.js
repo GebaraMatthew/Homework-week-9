@@ -45,8 +45,8 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'questions',
-        message: 'Are there any frequently asked questions?',
+        name: 'installation',
+        message: 'How do you install this program?',
         validate: titleInput => {
             if (titleInput) {
                 return true;
@@ -83,19 +83,6 @@ const questions = [
         }
     },
     {
-        type: 'input',
-        name: 'purpose',
-        message: 'What is the purpose of your project??',
-        validate: titleInput => {
-            if (titleInput) {
-                return true;
-            } else {
-                console.log('Please enter valid instructions!');
-                return false;
-            }
-        }
-    },
-    {
         type: 'list',
         name: 'license',
         message: 'Which license will you use for your project?',
@@ -115,11 +102,14 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    return inquirer.prompt(questions);
+    return inquirer.prompt(questions).then(readmeData => {
+        return readmeData;
+    });
 }
 
 // Function call to initialize app
-//init();
+//init()
+
 const data = {title: "test"}
 const markDown = generateMarkdown(data)
 writeToFile("test.md",markDown)
