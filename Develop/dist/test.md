@@ -1,11 +1,11 @@
   # test
   
-  undefined
+  ![licenseBadge](https://img.shields.io/badge/license-${license}-blue)
   ## Table-of-Contents
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  
+  ![${license}](https://choosealicense.com/licenses/${license}
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
@@ -17,7 +17,10 @@
   ## [Usage](#table-of-contents)
   undefined
   
-  undefined
+  
+    ## [License](#table-of-contents)
+    The program's license is:
+    ![${license}](https://choosealicense.com/licenses/${license}
   ## [Contributing](#table-of-contents)
   
 

@@ -108,7 +108,12 @@ function init() {
 }
 
 // Function call to initialize app
-//init()
+init().then(readmeData => {
+    return generateMarkdown(readmeData);
+})
+.then(pageMD => {
+    return writeToFile(pageMD)
+})
 
 const data = {title: "test"}
 const markDown = generateMarkdown(data)
