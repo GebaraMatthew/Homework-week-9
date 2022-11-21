@@ -112,9 +112,5 @@ init().then(readmeData => {
     return generateMarkdown(readmeData);
 })
 .then(pageMD => {
-    return writeToFile(pageMD)
+    return writeToFile("Readme.md", pageMD)
 })
-
-const data = {title: "test"}
-const markDown = generateMarkdown(data)
-writeToFile("test.md",markDown)

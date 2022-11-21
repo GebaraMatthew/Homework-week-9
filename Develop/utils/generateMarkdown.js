@@ -44,9 +44,6 @@ function generateMarkdown(data) {
   * [Installation](#installation)
   * [Usage](#usage)
   ${renderLicenseLink(data.license)}
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
   
   ## [Description](#table-of-contents)
   ${data.description}
@@ -58,9 +55,6 @@ function generateMarkdown(data) {
   ${renderLicenseSection(data.license)}
   ## [Contributing](#table-of-contents)
   
-
-  ## [Tests](#table-of-contents)
-  ${data.test}
   ## [Questions](#table-of-contents)
   Please contact me using the following links:
   [GitHub](https://github.com/${data.githubusername})
